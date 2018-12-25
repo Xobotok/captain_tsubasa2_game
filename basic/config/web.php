@@ -4,6 +4,7 @@ $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
 
 $config = [
+    'defaultRoute' => 'menu/index',
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
@@ -12,7 +13,6 @@ $config = [
         '@npm'   => '@vendor/npm-asset',
     ],
     'components' => [
-
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'captain_tsubasa',
@@ -71,6 +71,7 @@ if (YII_ENV_DEV) {
         // uncomment the following to add your IP if you are not connecting from localhost.
         //'allowedIPs' => ['127.0.0.1', '::1'],
     ];
-}
+};
+
 
 return $config;

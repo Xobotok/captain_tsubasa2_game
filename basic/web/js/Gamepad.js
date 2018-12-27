@@ -252,3 +252,4 @@ class Gamepad {
     }
 }
 
+let gamepad = new Gamepad();

@@ -35,7 +35,7 @@ class GameController extends Controller {
         $game = Game::findOne($user->game_id);
         $player_team = Team::findOne($game->player_team_id);
         $enemy_team = Team::findOne($game->enemy_team_id);
-        return $this->render("play_game",[
+        return $this->render("game_play",[
             'tour'=>$tour,
             'game'=>$game,
             'player_team'=>$player_team,

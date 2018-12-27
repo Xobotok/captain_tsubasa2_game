@@ -2,26 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22121c12-b20c-41ee-8ba0-9acd5996c670" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/controllers/GameController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/controllers/MenuController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/views/game/new_game.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/views/game/play_game.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/views/layouts/_main.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/views/menu/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/web/css/game_start.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/web/css/game_start.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/web/css/start_menu.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/web/css/start_menu.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/web/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/web/css/style.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/web/js/Gamepad.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/basic/web/css/site.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/web/img/interface/menu/start_menu.jpg" afterPath="$PROJECT_DIR$/basic/web/img/interface/menu/start_menu.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/views/game/game_play.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/web/css/game_play.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/web/css/game_play.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/web/js/AudioPlayer.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/basic/views/game/play_game.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/assets/AppAsset.php" afterPath="$PROJECT_DIR$/basic/assets/AppAsset.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/config/web.php" afterPath="$PROJECT_DIR$/basic/config/web.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/controllers/GameController.php" afterPath="$PROJECT_DIR$/basic/controllers/GameController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/views/game/new_game.php" afterPath="$PROJECT_DIR$/basic/views/game/new_game.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/views/layouts/main.php" afterPath="$PROJECT_DIR$/basic/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/web/js/Gamepad.js" afterPath="$PROJECT_DIR$/basic/web/js/Gamepad.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,53 +24,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MenuController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/basic/controllers/MenuController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-              <folding>
-                <element signature="e#35#43#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="start_menu.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/basic/web/css/start_menu.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="game_start.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/basic/web/css/game_start.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="game_start.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/basic/web/css/game_start.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Gamepad.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basic/web/js/Gamepad.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="249" column="40" lean-forward="false" selection-start-line="249" selection-start-column="40" selection-end-line="249" selection-end-column="40" />
+            <state relative-caret-position="245">
+              <caret line="254" column="28" lean-forward="false" selection-start-line="254" selection-start-column="28" selection-end-line="254" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -88,8 +37,8 @@
       <file leaf-file-name="GameController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basic/controllers/GameController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+            <state relative-caret-position="178">
+              <caret line="40" column="24" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="24" />
               <folding>
                 <element signature="e#118#138#0#PHP" expanded="true" />
               </folding>
@@ -97,11 +46,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="play_game.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/basic/views/game/play_game.php">
+      <file leaf-file-name="game_play.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/basic/views/game/game_play.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="238">
+              <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game_play.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/basic/web/css/game_play.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AudioPlayer.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/basic/web/js/AudioPlayer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="45" column="44" lean-forward="true" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppAsset.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/basic/assets/AppAsset.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -110,8 +89,8 @@
       <file leaf-file-name="new_game.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basic/views/game/new_game.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="33" />
+            <state relative-caret-position="195">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -120,8 +99,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basic/views/menu/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="9" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="22" selection-end-column="9" />
+            <state relative-caret-position="119">
+              <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
               <folding>
                 <element signature="e#434#440#0#HTML" expanded="true" />
               </folding>
@@ -129,11 +108,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppAsset.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/basic/assets/AppAsset.php">
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/basic/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            <state relative-caret-position="340">
+              <caret line="28" column="47" lean-forward="false" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -144,9 +123,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="Less File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -169,19 +148,27 @@
         <option value="$PROJECT_DIR$/basic/web/js/Controller.js" />
         <option value="$PROJECT_DIR$/basic/web/js/Controls.js" />
         <option value="$PROJECT_DIR$/basic/web/js/Controlls.js" />
-        <option value="$PROJECT_DIR$/basic/assets/AppAsset.php" />
         <option value="$PROJECT_DIR$/basic/web/js/Control.js" />
         <option value="$PROJECT_DIR$/basic/web/css/style.less" />
         <option value="$PROJECT_DIR$/basic/config/web.php" />
         <option value="$PROJECT_DIR$/basic/web/.htaccess" />
-        <option value="$PROJECT_DIR$/basic/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/basic/web/css/start_menu.less" />
         <option value="$PROJECT_DIR$/basic/web/css/game_start.css" />
         <option value="$PROJECT_DIR$/basic/web/css/game_start.less" />
         <option value="$PROJECT_DIR$/basic/views/menu/index.php" />
+        <option value="$PROJECT_DIR$/basic/controllers/GameController.php" />
+        <option value="$PROJECT_DIR$/basic/views/layouts/double_marking.php" />
+        <option value="$PROJECT_DIR$/basic/web/css/play_game.css" />
+        <option value="$PROJECT_DIR$/basic/web/css/play_game.less" />
+        <option value="$PROJECT_DIR$/basic/views/game/play_game.php" />
+        <option value="$PROJECT_DIR$/basic/assets/AppAsset.php" />
         <option value="$PROJECT_DIR$/basic/views/game/new_game.php" />
         <option value="$PROJECT_DIR$/basic/web/js/Gamepad.js" />
-        <option value="$PROJECT_DIR$/basic/controllers/GameController.php" />
+        <option value="$PROJECT_DIR$/basic/web/js/MusicPlayer.js" />
+        <option value="$PROJECT_DIR$/basic/web/css/game_play.less" />
+        <option value="$PROJECT_DIR$/basic/views/game/game_play.php" />
+        <option value="$PROJECT_DIR$/basic/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/basic/web/js/AudioPlayer.js" />
       </list>
     </option>
   </component>
@@ -196,8 +183,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="140" />
-    <option name="y" value="46" />
+    <option name="x" value="203" />
+    <option name="y" value="102" />
     <option name="width" value="1400" />
     <option name="height" value="728" />
   </component>
@@ -280,6 +267,54 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="music" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="captain_tsubasa2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="captain_tsubasa2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="music" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="captain_tsubasa2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="captain_tsubasa2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -328,7 +363,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="game_start.less" />
+              <option name="myItemId" value="game_play.less" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -499,9 +534,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files (x86)/Mark Lagendijk/WinLess/WinLess.exe" />
-    <property name="list.type.of.created.stylesheet" value="Less" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../captain_tsubasa_game" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="nodejs_interpreter_path" value="$PROJECT_DIR$/../../../../NodeJS/node" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -590,15 +626,15 @@
       <updated>1545658135572</updated>
       <workItem from="1545658137282" duration="585000" />
       <workItem from="1545658901794" duration="959000" />
-      <workItem from="1545726479476" duration="22487000" />
+      <workItem from="1545726479476" duration="38232000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24031000" />
+    <option name="totallyTimeSpent" value="39776000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="140" y="46" width="1400" height="728" extended-state="0" />
+    <frame x="203" y="102" width="1400" height="728" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25746268" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -759,7 +795,7 @@
         <state relative-caret-position="306">
           <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
-            <element signature="e#35#43#0#PHP" expanded="true" />
+            <element signature="e#35#43#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -809,14 +845,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="27" column="49" lean-forward="false" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/basic/web/css/start_menu.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
@@ -841,54 +869,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/assets/AppAsset.php">
+    <entry file="file://$PROJECT_DIR$/basic/views/layouts/double_marking.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        <state relative-caret-position="374">
+          <caret line="27" column="51" lean-forward="true" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/views/menu/index.php">
+    <entry file="file://$PROJECT_DIR$/basic/web/css/game_play.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="9" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="22" selection-end-column="9" />
-          <folding>
-            <element signature="e#434#440#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic/views/game/new_game.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="33" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/basic/web/js/Gamepad.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="249" column="40" lean-forward="false" selection-start-line="249" selection-start-column="40" selection-end-line="249" selection-end-column="40" />
+        <state relative-caret-position="245">
+          <caret line="254" column="28" lean-forward="false" selection-start-line="254" selection-start-column="28" selection-end-line="254" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/web/css/game_play.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/views/game/game_play.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/basic/controllers/GameController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+        <state relative-caret-position="178">
+          <caret line="40" column="24" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="24" />
           <folding>
             <element signature="e#118#138#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/views/game/play_game.php">
+    <entry file="file://$PROJECT_DIR$/basic/views/game/new_game.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="195">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/assets/AppAsset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/views/menu/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="e#434#440#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="28" column="47" lean-forward="false" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/web/js/AudioPlayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="45" column="44" lean-forward="true" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
           <folding />
         </state>
       </provider>

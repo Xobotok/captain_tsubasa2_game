@@ -27,7 +27,7 @@ $this->registerCssFile('/css/game_start.css');
 </div>
 <script>
     window.onload = function () {
-        let gamepad = new Gamepad();
+
         gamepad.startMatchBehavor();
     }
 </script>

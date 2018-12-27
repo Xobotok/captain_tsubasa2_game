@@ -29,6 +29,18 @@ class GameController extends Controller {
             'player_team'=>$player_team,
             'enemy_team'=>$enemy_team]);
     }
+    public function actionStatus(){
+        $user = User::findOne(1);
+        $tour = Tour::findOne($user->tour_id);
+        $game = Game::findOne($user->game_id);
+        $player_team = Team::findOne($game->player_team_id);
+        $enemy_team = Team::findOne($game->enemy_team_id);
+        return $this->render("game_status",[
+            'tour'=>$tour,
+            'game'=>$game,
+            'player_team'=>$player_team,
+            'enemy_team'=>$enemy_team]);
+    }
     public function actionPlay(){
         $user = User::findOne(1);
         $tour = Tour::findOne($user->tour_id);

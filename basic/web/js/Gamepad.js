@@ -195,60 +195,51 @@ class Gamepad {
             }
         });
     }
-    startMenuBehavior() {
-        let kickOffRadio = $("#kick_off");
-        let continueRadio = $("#continue");
-        let kickOffBall = $("#kick__off_ball");
-        kickOffBall.addClass('visible');
-        let continueBall = $("#continue_ball");
-        continueBall.addClass('invisible');
-        this.setKeyStartBehavior(()=>{
-            if(kickOffRadio.prop("checked")) {
-                location.replace("/game/start")
+    universalMenuBehavior(){
+        let buttons = $('input[type="radio"]');
+        function refreshBalls() {
+            for (let i = 0; i < buttons.length; i++) {
+                let ball = $("#"+$(buttons[i]).prop("id")+"_ball");
+                ball.removeClass("visible").addClass('invisible');
+                if (buttons[i].checked) {
+                    $(buttons[i]).prop("id");
+                    ball.removeClass("invisible").addClass("visible");
+                }
             }
-            if(continueRadio.prop("checked")) {
-                alert("Игра продолжилас")
-            }
-        });
+        }
+        refreshBalls();
         this.setKeyDownBehavior(()=> {
-            if(kickOffRadio.prop("checked")) {
-                kickOffBall.addClass("invisible");
-                kickOffBall.removeClass("visible");
-                continueBall.removeClass("invisible");
-                continueBall.addClass("visible");
-                kickOffRadio.prop({"checked":false});
-                continueRadio.prop({"checked":true});
-            } else {
-                continueBall.addClass("invisible");
-                continueBall.removeClass("visible");
-                kickOffBall.removeClass("invisible");
-                kickOffBall.addClass("visible");
-                continueRadio.prop({"checked":false});
-                kickOffRadio.prop({"checked":true});
+            for(let i = 0; i < buttons.length; i++) {
+                if ($(buttons[i]).prop('checked') === true) {
+                    $(buttons[i]).prop('checked', false);
+                    if( i === buttons.length - 1) {
+                        $(buttons[0]).prop('checked', true);
+                        refreshBalls();
+                        break;
+                    } else {
+                        $(buttons[i+1]).prop('checked', true);
+                        refreshBalls();
+                        break;
+                    }
+                }
+            }
+            });
+        this.setKeyUpBehavior(()=> {
+            for(let i = 0; i < buttons.length; i++) {
+                if ($(buttons[i]).prop('checked') === true) {
+                    $(buttons[i]).prop('checked', false);
+                    if( i === 0) {
+                        $(buttons[buttons.length - 1]).prop('checked', true);
+                        refreshBalls();
+                        break;
+                    } else {
+                        $(buttons[i-1]).prop('checked', true);
+                        refreshBalls();
+                        break;
+                    }
+                }
             }
         });
-        this.setKeyUpBehavior(()=> {
-            if(kickOffRadio.prop("checked")) {
-                kickOffBall.addClass("invisible");
-                kickOffBall.removeClass("visible");
-                continueBall.removeClass("invisible");
-                continueBall.addClass("visible");
-                kickOffRadio.prop({"checked":false});
-                continueRadio.prop({"checked":true});
-            } else {
-                continueBall.addClass("invisible");
-                continueBall.removeClass("visible");
-                kickOffBall.removeClass("invisible");
-                kickOffBall.addClass("visible");
-                continueRadio.prop({"checked":false});
-                kickOffRadio.prop({"checked":true});
-            }
-        })
-    }
-    startMatchBehavor() {
-        this.setKeyStartBehavior(()=>{
-            location.replace("/game/play")
-        })
     }
 }
 

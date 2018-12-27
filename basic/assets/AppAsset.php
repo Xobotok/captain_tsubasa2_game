@@ -24,7 +24,8 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
         'js/Gamepad.js',
-        'js/AudioPlayer.js'
+        'js/Actions.js',
+        'js/AudioPlayer.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

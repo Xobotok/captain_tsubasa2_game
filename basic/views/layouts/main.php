@@ -26,7 +26,7 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 <section class="game__section" id = "game_section">
-    <button class = "sound_off" id = "sound_off">sound off</button>
+    <button class = "sound_off" id = "sound_off"><span class="glyphicon glyphicon-volume-up"></span></button>
     <?= $content?>
 </section>
 <?php $this->endBody() ?>

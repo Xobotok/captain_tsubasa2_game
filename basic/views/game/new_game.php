@@ -28,5 +28,6 @@ $this->registerCssFile('/css/game_start.css');
 <script>
     window.onload = function () {
         actions.statusMatchAction();
+        camera.show();
     }
 </script>

@@ -17,8 +17,8 @@ $this->registerCssFile('css/start_menu.css');
 </div>
 <script>
     window.onload = function () {
-        let gamepad = new Gamepad();
         gamepad.universalMenuBehavior();
         actions.startAction();
+        camera.show();
     }
 </script>

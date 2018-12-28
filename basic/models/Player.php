@@ -27,7 +27,10 @@ use Yii;
  * @property int $number Номер игрока
  * @property int $lvl Уровень игрока
  * @property int $exp Опыт игрока
+ * @property int $team_id ID команды, в которой играет игрок
  *
+ * @property Team $team
+ * @property PlayersStamina[] $playersStaminas
  * @property Team[] $teams
  * @property Team[] $teams0
  * @property Team[] $teams1
@@ -55,9 +58,10 @@ class Player extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['dribble', 'pass', 'shot', 'tack', 'block', 'cut', 'high_trap', 'high_shot', 'high_throw', 'high_clear', 'low_trap', 'low_shot', 'low_throw', 'low_clear', 'power', 'number'], 'required'],
-            [['dribble', 'pass', 'shot', 'tack', 'block', 'cut', 'high_trap', 'high_shot', 'high_throw', 'high_clear', 'low_trap', 'low_shot', 'low_throw', 'low_clear', 'power', 'number', 'lvl', 'exp'], 'integer'],
+            [['dribble', 'pass', 'shot', 'tack', 'block', 'cut', 'high_trap', 'high_shot', 'high_throw', 'high_clear', 'low_trap', 'low_shot', 'low_throw', 'low_clear', 'power', 'number', 'team_id'], 'required'],
+            [['dribble', 'pass', 'shot', 'tack', 'block', 'cut', 'high_trap', 'high_shot', 'high_throw', 'high_clear', 'low_trap', 'low_shot', 'low_throw', 'low_clear', 'power', 'number', 'lvl', 'exp', 'team_id'], 'integer'],
             [['name'], 'string', 'max' => 32],
+            [['team_id'], 'exist', 'skipOnError' => true, 'targetClass' => Team::className(), 'targetAttribute' => ['team_id' => 'id']],
         ];
     }
 
@@ -87,7 +91,24 @@ class Player extends \yii\db\ActiveRecord
             'number' => 'Number',
             'lvl' => 'Lvl',
             'exp' => 'Exp',
+            'team_id' => 'Team ID',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getTeam()
+    {
+        return $this->hasOne(Team::className(), ['id' => 'team_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getPlayersStaminas()
+    {
+        return $this->hasMany(PlayersStamina::className(), ['player_id' => 'id']);
     }
 
     /**

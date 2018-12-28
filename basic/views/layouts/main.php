@@ -11,6 +11,7 @@ use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
 AppAsset::register($this);
+
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -25,8 +26,9 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
+<button class = "sound_off" id = "sound_off"><span class="glyphicon glyphicon-volume-up"></span></button>
 <section class="game__section" id = "game_section">
-    <button class = "sound_off" id = "sound_off"><span class="glyphicon glyphicon-volume-up"></span></button>
+    <div class="mask" id = "mask"> </div>
     <?= $content?>
 </section>
 <?php $this->endBody() ?>

@@ -122,10 +122,31 @@ a.desc:after {
   padding-bottom: 20px;
   margin: 0 auto;
   margin-top: 50px;
+  position: relative;
 }
 .invisible {
   opacity: 0;
 }
 .visible {
   opacity: 1;
+}
+.sound_off {
+  position: absolute;
+  top: 50px;
+  left: 300px;
+  background-color: black;
+  font-size: 26px;
+  border: none;
+  color: white;
+  outline: none;
+}
+.mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  background-color: black;
+  z-index: 99;
 }

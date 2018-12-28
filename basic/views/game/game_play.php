@@ -2,22 +2,17 @@
 $this->registerCssFile('/css/game_play.css');
 $this->registerJsFile('/js/Timer.js');
 ?>
-
 <div class="game__part top__part" id = "top_part">
-    <div class="top__part_title"><h3>Meeting</h3></div>
-    <div class="top__part_image"><img src="/img/team_<?=$player_team->id?>/meeting_coach.jpg" alt=""></div>
+        <?= \app\components\widgets\TopPartWidget::widget(['tpl'=>'full_image'])?>
+    <h1><?= $player_team->getNo2->name?></h1>
 </div>
 <div class="game__part bot__part row" id = "bottom_part">
     <div class="col-lg-4 bot__part_menu">
-        <div class="timer__container">
-            <div class="timer" id = "timer">
-            <h3 class="timer__period" id = "timer_period"></h3>
-                <h3 class="timer__time"><span  id = "timer_minutes"></span> : <span id = "timer_seconds"></span></h3>
-            </div>
-        </div>
+        <?= \app\components\widgets\BottomPartWidget::widget(['tpl'=>'timer'])?>
+        <?= \app\components\widgets\BottomPartWidget::widget(['tpl'=>'score', 'player_team_name' => $player_team->name, 'enemy_team_name' => $enemy_team->name, 'game_progress' => $game_progress])?>
     </div>
     <div class="col-lg-8 bot__part_info">
-        <?= \app\components\widgets\BottomPartWidget::widget(['tpl'=>'menu'])?>
+        <?= \app\components\widgets\BottomPartWidget::widget(['tpl'=>'commentator'])?>
     </div>
 </div>
 
@@ -25,5 +20,7 @@ $this->registerJsFile('/js/Timer.js');
     window.onload = function () {
         gamepad.universalMenuBehavior();
         timer.renderTime();
+        refreshScore();
+        camera.show(1700);
     }
 </script>

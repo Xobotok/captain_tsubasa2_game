@@ -23,12 +23,6 @@
     }
   }
 }
-.sound_off {
-  background-color: inherit;
-  border: none;
-  color: white;
-  outline: none;
-}
 .bot__part_menu {
   height: 80%;
   margin-top: 20px;
@@ -82,7 +76,33 @@
   }
 }
 .timer__container {
+  -webkit-border-radius:25px;
+  -moz-border-radius:25px;
+  border-radius:25px;
   width: 70%;
   margin-left: 100px;
   border: 4px solid white;
+  color: white;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .timer {
+    #timer_period{
+      position: absolute;
+      top: -35px;
+      left: 40%;
+      background-color: black;
+    }
+    .timer__time {
+      text-align: center;
+    }
+    .team__score {
+      padding-left: 30px;
+      span {
+        float: right;
+        padding-right: 30px;
+      }
+    }
+  }
+
 }

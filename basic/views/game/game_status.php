@@ -46,5 +46,6 @@ $this->registerCssFile('/css/game_play.css');
 musicPlayer.playMusic('../../music/menu/bigmeeting.mp3');
         gamepad.universalMenuBehavior();
         actions.playMatchAction();
+        camera.show();
     }
 </script>

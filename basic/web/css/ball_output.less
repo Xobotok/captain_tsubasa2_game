@@ -1,0 +1,66 @@
+.scene__container {
+  position: relative;
+  #background {
+    width: 100%;
+    height: 300px;
+  }
+  .player__container {
+    position: absolute;
+    margin: 0 auto;
+    right: 164px;
+    top: 140px;
+    width: 113px;
+    height: auto;
+    .scene__container_player {
+      position: absolute;
+    }
+    @keyframes back {
+      from {
+        right: 164px;
+        top: 140px;
+      }
+      to {
+        right: 124px;
+        top: 123px;
+      }
+    }
+  }
+
+  #kick2 {
+    display: none;
+  }
+  .player__animation_start {
+    animation: back linear 2.2s;
+  }
+  .pass__animation_start {
+    animation: scroll linear 2.2s;
+  }
+  #ball_container {
+    position: absolute;
+    right: 204px;
+    top: 243px;
+    width: 25px;
+    height: auto;
+    img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      right: 5px;
+      display: none;
+    }
+    #ball1 {
+      display: inline-block;
+    }
+    @keyframes scroll {
+      from {
+        right: 204px;
+        top: 243px;
+      }
+      to {
+        right: 854px;
+        top: 93px;
+      }
+    }
+  }
+}
+

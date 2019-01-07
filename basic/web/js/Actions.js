@@ -36,6 +36,19 @@ class Actions {
             location.replace("/game/play")
         })
     }
+    ballOutputAction() {
+        camera.blind(0);
+       $.ajax({
+           url: '/scenes/ball-output',
+           type: 'GET',
+           success: function (data) {
+               $("#top_full_image").empty();
+               $(data).appendTo($("#top_full_image")[0]);
+               camera.light(800);
+           }
+           }
+       )
+    }
 
 }
 let actions = new Actions(gamepad);

@@ -1,10 +1,10 @@
 <?
 $this->registerCssFile('/css/game_play.css');
+$this->registerCssFile('/css/referee_scene.css');
 $this->registerJsFile('/js/Timer.js');
 ?>
-<div class="game__part top__part" id = "top_part">
+<div class="game__part top__part row" id = "top_part">
         <?= \app\components\widgets\TopPartWidget::widget(['tpl'=>'full_image'])?>
-    <h1><?= $player_team->getNo2->name?></h1>
 </div>
 <div class="game__part bot__part row" id = "bottom_part">
     <div class="col-lg-4 bot__part_menu">
@@ -21,6 +21,10 @@ $this->registerJsFile('/js/Timer.js');
         gamepad.universalMenuBehavior();
         timer.renderTime();
         refreshScore();
+        phpControllerGetRequest('scenes','referee',renderToFullImage);
+        gamepad.setKeyABehavior(actions.ballOutputAction);
         camera.show(1700);
+
     }
+
 </script>

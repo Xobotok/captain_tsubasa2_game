@@ -1,0 +1,36 @@
+.img__scene_referee {
+  padding-top: 70px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+    .referee__bg_bot {
+      width: 100%;
+    }
+  .referee__model_referee {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    z-index: 9;
+  }
+  .referee__bg_top1 {
+    width: 100%;
+    height: 59px;
+    background-image: url(/img/scenes/referee/referee_bg_top1.png);
+    animation: scroll linear 84s infinite;
+  }
+  @keyframes scroll {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -200% 0;
+    }
+  }
+  .referee__bg_top2 {
+    width: 100%;
+    height: 61px;
+    background-image: url(/img/scenes/referee/referee_bg_top2.png);
+    animation: scroll linear 54s infinite;
+  }
+
+  }

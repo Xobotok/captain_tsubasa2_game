@@ -27,7 +27,9 @@ class AppAsset extends AssetBundle
         'js/Actions.js',
         'js/AudioPlayer.js',
         'js/Score.js',
-        'js/Camera.js'
+        'js/Camera.js',
+        'js/helper.js',
+        'js/Animations.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',
